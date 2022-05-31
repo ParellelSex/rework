@@ -2,7 +2,7 @@ repeat task.wait() until game:IsLoaded()
 game:GetService("ReplicatedFirst"):RemoveDefaultLoadingScreen()
 if not shared.Executed then
 shared.Executed = true
-syn.queue_on_teleport('https://raw.githubusercontent.com/ParellelSex/rework/main/main.lua')
+syn.queue_on_teleport(game:HttpGet('https://raw.githubusercontent.com/ParellelSex/rework/main/main.lua'))
 local Color = Color3.fromRGB(25, 25, 25)
 local SecondaryColor = Color3.fromRGB(25, 25, 25)
 local CoreGui = game:GetService("CoreGui")
